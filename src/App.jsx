@@ -397,7 +397,7 @@ export default function AddPost() {
                           <Spin />
                         </Flex>
                       }
-                      width={100}
+                      width={124}
                       style={{ borderRadius: 1 }}
                       preview={{ toolbarRender: () => <></> }}
                       src={image}
