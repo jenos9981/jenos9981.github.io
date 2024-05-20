@@ -1,70 +1,16 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang nhà cung cấp - TEST</title>
+    <title>Crawl GGz</title>
     <script>
-      window["API_URL"] = "https://api.gaigoiz.org";
-      window["SITE_URL"] = "https://gaigoiz.org";
-      window["exchange_rate"] = 500;
-      window["APP_CONFIG"] = {
-        add_post: 1000,
-        renew_post: 1000,
-        edit_post: 500,
-      };
+      window["CORS_URL"] = "https://savani.vn/libraries/cropper/images/px.php";
     </script>
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      .loader-box {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .loader {
-        width: 120px;
-        height: 22px;
-        border-radius: 40px;
-        color: #0958d9;
-        border: 2px solid;
-        position: relative;
-        overflow: hidden;
-      }
-      .loader::before {
-        content: "";
-        position: absolute;
-        margin: 2px;
-        width: 14px;
-        top: 0;
-        bottom: 0;
-        left: -20px;
-        border-radius: inherit;
-        background: currentColor;
-        box-shadow: -10px 0 12px 3px currentColor;
-        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%, -30px 50%);
-        animation: l14 1s infinite linear;
-      }
-      @keyframes l14 {
-        100% {
-          left: calc(100% + 20px);
-        }
-      }
-    </style>
-    <script type="module" crossorigin src="/assets/index-uoshPTtM.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CmdsqWjW.css" />
   </head>
   <body>
-    <div id="root">
-      <div class="loader-box">
-        <div class="loader"></div>
-      </div>
-    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
